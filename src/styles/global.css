@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Hind+Guntur:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  font-family: 'Hind Guntur', Helvetica, sans-serif;
+  position: relative;
+}
+
+nav, h1, h2, h3, h4 {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+a {
+  color: #e00000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/** most anchors **/
+a:hover, a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/** button anchors **/
+a.button:hover, a.button:focus {
+  text-decoration: none;
+  outline: initial;
+}
+
+.social-media img {
+  width: 60px;
+  height: auto;
+}
+
+main a {
+  font-weight: bold;
+}
+
+header img {
+  border-bottom: 4px solid transparent;
+}
+
+nav a,
+.social-media a {
+  border-bottom: 4px solid transparent;
+  text-decoration: none;
+}
+
+header a:focus img,
+nav a:hover, nav a:focus,
+.social-media a:hover, .social-media a:focus {
+  border-bottom: 4px solid #e00000;
+  text-decoration: none;
+}
+
+nav a[aria-current="page"] {
+  color: #000;
+}
+
+header a:focus img,
+nav a[aria-current="page"]:hover,
+nav a[aria-current="page"]:focus {
+  border-bottom: 4px solid #000;
+}
+
+.button {
+  cursor: pointer;
+  color: #e00000;
+  text-decoration: none;
+}
+
+.selected a {
+  border-bottom: 4px solid black;
+}
+
+.border--grey {
+  border-color: #dadada;
+}
+
+.image--link {
+  outline: 2px solid #dadada;
+}
+
+.image--link.image--call {
+  outline: 2px transparent;
+}
+
+a:focus .image--link {
+  outline: 4px solid #e00000;
+}
+
+main {
+  line-height: 1.5;
+  padding: .5rem;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.rounded img, img.rounded {
+  border-radius: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: 0px;
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  overflow: hidden;
+  clip: rect(0px, 0px, 0px, 0px);
+  white-space: nowrap;
+  border: 0px;
+}

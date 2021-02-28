@@ -1,0 +1,44 @@
+---
+by:
+- id: '0221'
+  title: 'When you find your worry twin'
+  date: 'February 2021'
+  url: 'https://cordeliadillon.medium.com/when-you-find-your-worry-twin-b7021ef342b8'
+  description: "I really enjoyed collaborating with Emma Pan on this essay about something we all too often keep to ourselves: anxiety. It can be scary to share what's really going on in your head, but it's oh so cathartic when you finally do."
+- id: '1219'
+  title: 'Building an accessible bingo web app'
+  date: 'December 2019'
+  publication: '24 Accessibility'
+  url: 'https://www.24a11y.com/2019/building-an-accessible-bingo-web-app/'
+  description: "Itching to write some code, I began designing a multiplayer bingo web app. The app would be dynamic, mobile-friendly, and, most importantly, accessible."
+- id: '0417'
+  title: 'Creating a culture of accessibility'
+  date: 'April 2017'
+  publication: 'Dropbox Tech Blog'
+  url: 'https://blogs.dropbox.com/tech/2017/04/creating-a-culture-of-accessibility/'
+  description: "Sharing some techniques Dropbox used within its engineering organization (& beyond) to keep accessibility top-of-mind for product creators"
+- id: '0316'
+  title: 'Using onclick wisely'
+  date: 'March 2016'
+  publication: 'net magazine'
+  url: 'https://issuu.com/futurepublishing/docs/net279.issuu'
+  description: "The onClick handler is a powerful piece of JavaScript. You can add it to any HTML element to make that element clickable. But should you?"
+- id: '1214'
+  title: "Projectors Don't Lie"
+  date: 'December 2014'
+  publication: 'Salesforce UX Blog'
+  url: 'https://medium.com/salesforce-ux/projectors-dont-lie-b85ef628b04'
+  description: "How many times have you been in a meeting where a design looked strange but was waved away with \"Oh, that’s just the projector\"? In my experience, projectors don't lie. They just exaggerate a little."
+- id: '0314'
+  title: 'Alternatives to "Ninja" and "Rockstar"'
+  date: 'March 2014'
+  url: 'https://medium.com/@cordeliadillon/alternatives-to-ninja-and-rockstar-8cc108a82c0'
+  description: "If recruiters want to refer to other professions in their job descriptions, I propose they get practical and discuss roles with skill-sets that are conceptually similar to those of software developers. Ditch the ideals of ninja and rockstar and instead look for sculptors and archaeologists."
+about:
+- id: '0417'
+  title: 'Webbsidor är egentligen serieteckningar'
+  date: 'April 2017'
+  publication: 'Finlands Synskadade'
+  author: 'Sören Jonsson'
+  url: 'https://www.fss.fi/tidningsarkivet/finlands-synskadade-nummer-4-2017'
+  description: 'An interview for Finlands Synskadade (Finnish Visually Impaired) about comics and accessibility.'

@@ -1,33 +1,39 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
+import name from "../images/cordelia--name.png";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const navLinks = [
+  { label: 'About', href: '/about' },
+  // { label: 'Comics', href: '/comics' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'Talks', href: '/talks' },
+  { label: 'Writing', href: '/writing' }
+];
+
+const Header = () => (
+  <header>
+    <div className="mw8 center tc">
+      <Link to="/">
+        <img 
+          className="w-80 tracked b mt4 mb2 tc"
+          src={name}
+          alt="Cordelia McGee-Tubb"
+        />
+      </Link>
     </div>
+
+    <nav className="tc pb3">
+      <ul className="list b f3 ma0 pa0 tracked ttu">
+        {navLinks.map((navLink, i) => { return (
+          <li className="dib-ns mr4-ns mb2" key={i}>
+            <Link to={navLink.href}>
+              {navLink.label}
+            </Link>
+          </li>
+        )})}
+      </ul>
+    </nav>
   </header>
 )
 
@@ -39,4 +45,4 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Header;
