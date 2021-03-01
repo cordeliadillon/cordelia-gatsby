@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import Layout from "../components/layout";
 import { Grid, Column } from "../components/grid";
 import SEO from "../components/seo";
@@ -29,11 +28,11 @@ const Piece = ({piece}) => (
 const Writing = () => (
   <Layout>
     <SEO title="Writing" />
+    <h1 className="ma0 pa0 f1">
+      Writing
+    </h1>
     <Grid columns="3fr 2fr">
       <Column>
-        <h1 className="ma0 pa0 f1">
-          Writing
-        </h1>
         <ul className="list pa0 ma0">
           {allWritingData.by.map((piece, i) => (
             <li key={i}>

@@ -1,6 +1,6 @@
 ---
 title: "Brocedurally Generated"
-link: "http://www.cordeliadillon.com/comics/brocedurally-generated/"
+link: "https://www.cordeliadillon.com/comics/brocedurally-generated/"
 image: "images/brocedurally-generated.jpg"
 alt: "Two square comics panels. Panel 1: A laptop screen which says simply, 'You're harshing my vertical integration.' Panel 2: A bespectacled young man, partially in frame, holds up a coffee to-go cup and says, 'Yeah, I read about that on Reddit.'"
 featured: false

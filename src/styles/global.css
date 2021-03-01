@@ -4,6 +4,7 @@
 body {
   font-family: 'Hind Guntur', Helvetica, sans-serif;
   position: relative;
+  padding: 0 1rem;
 }
 
 nav, h1, h2, h3, h4 {
@@ -71,6 +72,10 @@ nav a[aria-current="page"]:focus {
   border-bottom: 4px solid #000;
 }
 
+main {
+  line-height: 1.5;
+}
+
 .button {
   cursor: pointer;
   color: #e00000;
@@ -95,11 +100,6 @@ nav a[aria-current="page"]:focus {
 
 a:focus .image--link {
   outline: 4px solid #e00000;
-}
-
-main {
-  line-height: 1.5;
-  padding: .5rem;
 }
 
 .video-wrapper {

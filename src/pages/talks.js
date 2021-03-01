@@ -6,8 +6,7 @@ import Layout from "../components/layout";
 import Section from "../components/section";
 import SEO from "../components/seo";
 import publicSpeaking from "../images/cordelia--public-speaking.jpg";
-import allTalkData from "../content/talks/all-talks.yaml";
-import _JSXStyle from 'styled-jsx/style';
+import allTalkData from "../content/talks.yaml";
 
 const Talk = ({talk}) => (
   <div>
@@ -24,7 +23,9 @@ const Talk = ({talk}) => (
       (talk.links.map((link, i) => (
         <>
           {i > 0 ?
-            <span aria-hidden="true" className="b ph2">&middot;</span>
+            <span aria-hidden="true" className="b ph2">
+              &middot;
+            </span>
             : null
           }
           <a 
@@ -44,6 +45,7 @@ const FeaturedPhoto = ({data}) => {
   if (data.frontmatter.photoSrc) {
     const photo = (
       <Img 
+        alt={data.frontmatter.photoAlt}
         className="rounded"
         fluid={{
         ...data.frontmatter.photoSrc.childImageSharp.fluid,
@@ -55,7 +57,7 @@ const FeaturedPhoto = ({data}) => {
         <figure className="ma0 pa0">
           {photo}
           <figcaption className="f6 i pv2">
-            {data.frontmatter.photoAlt} (Photo credit:{' '}
+            {data.frontmatter.photoCaption} (Photo credit:{' '}
             <a href={data.frontmatter.photoCreditLink}>
               {data.frontmatter.photoCredit}
             </a>)
@@ -67,7 +69,7 @@ const FeaturedPhoto = ({data}) => {
         <figure  className="ma0 pa0">
           {photo}
           <figcaption className="f6 i pv2">
-            {data.frontmatter.photoAlt}
+            {data.frontmatter.photoCaption}
           </figcaption>
         </figure>
       );
@@ -80,7 +82,7 @@ const FeaturedTalk = ({data}) => (
   <article className="mb4">
     <Grid columns="2fr 3fr">
       <Column>
-        <h3 className="f4">{data.frontmatter.title}</h3>
+        <h3 className="mt0 f4">{data.frontmatter.title}</h3>
         <div dangerouslySetInnerHTML={{__html: data.html}}/>
       </Column>
       <Column>
@@ -92,15 +94,15 @@ const FeaturedTalk = ({data}) => (
 
 const Talks = ({data}) => {
   const featuredTalks = data.allMarkdownRemark.edges;
-  console.log(featuredTalks);
   return (
     <Layout>
       <SEO title="Talks" />
+      <h1 className="ma0 pa0 f1">
+        Talks
+      </h1>
       <Grid columns="3fr 2fr">
         <Column>
-          <h1 className="ma0 pa0 f1">
-            Talks
-          </h1>
+
           <p>
             As an introvert who has struggled with social anxiety
             since a young age, I never would have thought I'd enjoy
@@ -119,7 +121,7 @@ const Talks = ({data}) => {
           </Section>
         </Column>
         <Column>
-          <img 
+          <img
             src={publicSpeaking} 
             alt={`Illustrated Cordelia pointing enthusiastically 
               at the words 'Public Speaking' on a stand-up 
@@ -153,7 +155,7 @@ export const query = graphql`
   query {
     allMarkdownRemark(
       filter: {
-        fileAbsolutePath: {regex: "/talks/"},
+        fileAbsolutePath: {regex: "/featured-talks/"},
         frontmatter: {status: {ne: "Hidden"}}
       },
       sort: {
@@ -174,6 +176,7 @@ export const query = graphql`
               }
             }
             photoAlt
+            photoCaption
             photoCredit
             photoCreditLink
           }

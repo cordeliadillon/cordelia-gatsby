@@ -24,7 +24,8 @@ const About = () => (
           I hold an {' '}
           <a href="https://www.cca.edu/academics/graduate/comics">MFA in Comics</a>{' '}
           from California College of the Arts. These days, I mostly draw autobio webcomics
-          and have dreams of someday publishing a longer comic memoir about anxiety. I also love to illustrate slides 
+          and have dreams of someday publishing a longer comic memoir about anxiety, OCD,
+          and depression. I also love to illustrate slides 
           for my <Link to="/talks">public speaking engagements</Link>.  I'm super excited about
           comics that are accessible to blind and low vision readers.
           If that's your jam, let's talk!
@@ -47,8 +48,8 @@ const About = () => (
       </Column>
     </Grid>
 
-    <section className="w-60" style={{"margin": "0 auto"}}>
-      <h2 className="f3 tc">Contact me</h2>
+    <section className="center measure">
+      <h2 className="f3 tc-ns">Contact me</h2>
       <p>
         You can email me at <strong>cordelia</strong> at{' '}
         <strong>cordeliadillon</strong> dot <strong>com</strong>{' '}

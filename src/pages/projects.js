@@ -53,6 +53,7 @@ const ProjectCard = ({data}) => {
         .project-card {
           padding: 1em;
           display: grid;
+          align-items: start;
         }
 
         .project-card--featured {
@@ -61,14 +62,10 @@ const ProjectCard = ({data}) => {
           grid-gap: 2rem 2rem;
         }
 
-        .project-card--featured > div:nth-child(2) {
+        .project-card > div:nth-child(2) {
           grid-row: 1;
           grid-column: 1;
-        }
-
-        .project-card:not(.project-card--featured) > div:nth-child(2) {
-          grid-row: 1;
-          grid-column: 1;
+          align-self: start;
         }
 
         .project-card p a {
@@ -168,6 +165,7 @@ const Projects = ({data}) => {
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-gap: 2rem 2rem;
+          align-items: start;
         }
 
         .project-filters {

@@ -1,7 +1,7 @@
 ---
 title: "Co-hosting #a11yTO Conf"
 photoSrc: images/a11y-to.jpg
-photoAlt: "Eric Bailey & I on stage in front of the #a11yTO event logo"
+photoCaption: "Eric Bailey & I on stage in front of the #a11yTO event logo"
 photoCredit: Carie Fisher
 photoCreditLink: https://twitter.com/cariefisher/status/1187720759306833920/photo/1
 
