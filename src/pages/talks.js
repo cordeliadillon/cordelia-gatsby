@@ -93,7 +93,6 @@ const FeaturedTalk = ({data}) => (
 );
 
 const Talks = ({data}) => {
-  const featuredTalks = data.allMarkdownRemark.edges;
   return (
     <Layout>
       <SEO title="Talks" />

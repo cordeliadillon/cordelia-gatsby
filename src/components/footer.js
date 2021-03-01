@@ -49,6 +49,7 @@ const Footer = () => (
             href={social.url}
             target="_blank"
             title={social.description}
+            rel="noreferrer"
           >
             <img src={social.logo} alt={social.label}/>
           </a>

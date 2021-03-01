@@ -10,7 +10,7 @@ by:
   date: 'December 2019'
   publication: '24 Accessibility'
   url: 'https://www.24a11y.com/2019/building-an-accessible-bingo-web-app/'
-  description: "Itching to write some code, I began designing a multiplayer bingo web app. The app would be dynamic, mobile-friendly, and, most importantly, accessible."
+  description: "Itching to write some code, I built a multiplayer bingo web app. Here's how I approached its implementation with accessibility in mind."
 - id: '0417'
   title: 'Creating a culture of accessibility'
   date: 'April 2017'
@@ -33,7 +33,7 @@ by:
   title: 'Alternatives to "Ninja" and "Rockstar"'
   date: 'March 2014'
   url: 'https://medium.com/@cordeliadillon/alternatives-to-ninja-and-rockstar-8cc108a82c0'
-  description: "If recruiters want to refer to other professions in their job descriptions, I propose they get practical and discuss roles with skill-sets that are conceptually similar to those of software developers. Ditch the ideals of ninja and rockstar and instead look for sculptors and archaeologists."
+  description: "The ideal software developer is probably not going to identify as a ninja or a rockstar, but as someone who enjoys the challenges of learning complex systems, thinking through tough problems, and building solutions with a variety of tools."
 about:
 - id: '0417'
   title: 'Webbsidor är egentligen serieteckningar'

@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import cn from 'classnames';
 import { graphql } from "gatsby";
-import { Link } from "gatsby";
 import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -49,7 +48,7 @@ const ProjectCard = ({data}) => {
           }
         </div>
       </article>
-      <style global jsx>{`
+      <style jsx>{`
         .project-card {
           padding: 1em;
           display: grid;
