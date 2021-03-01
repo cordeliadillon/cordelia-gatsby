@@ -32,7 +32,7 @@ const socials = [
     logo: githubLogo
   },{
     id: 'tumblr',
-    url: 'https://echothroughthefog.tumblr.com',
+    url: 'https://echothroughthefog.cordeliadillon.com/',
     label: 'Tumblr',
     description: 'Echo Through the Fog on Tumblr',
     logo: tumblrLogo

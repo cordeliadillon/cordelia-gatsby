@@ -1,6 +1,6 @@
 ---
 title: "a11ies.info"
-link: "https://www.a11ies.info"
+link: "https://a11ies.info/"
 image: "images/a11ies-info.png"
 featured: true
 status: "Active"
