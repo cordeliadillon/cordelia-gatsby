@@ -4,6 +4,7 @@ module.exports = {
     description: `Cordelia McGee-Tubb is a person with a website.`,
     author: `Cordelia McGee-Tubb`,
   },
+  pathPrefix: "/cordelia-gatsby",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
