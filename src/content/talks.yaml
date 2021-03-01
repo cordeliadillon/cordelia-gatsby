@@ -306,7 +306,7 @@ pastTalks:
   - name: Google Slides
     href: https://docs.google.com/presentation/d/1_-bZnTdCAhj2TqZRjmBM3ZGSkBunS9Pq6SWZbkmwMck/edit
   - name: Examples
-    href: https://archive.cordeliadillon.com/talks/TheMixin/accessibility/index.html
+    href: http://archive.cordeliadillon.com/talks/TheMixin/accessibility/index.html
 - id: '030515'
   title: Accessibility in an Agile World
   eventDate: March 2015
@@ -321,7 +321,7 @@ pastTalks:
   - name: SlideShare
     href: http://www.slideshare.net/cordeliadillon/accessibility-inanagileworld-csun2015
   - name: Slides (PDF)
-    href: https://archive.cordeliadillon.com/talks/CSUN2015/AccessibilityInAnAgileWorld-CSUN15.pdf
+    href: http://archive.cordeliadillon.com/talks/CSUN2015/AccessibilityInAnAgileWorld-CSUN15.pdf
 - id: '021115'
   title: Functional Prototyping is Awesome!
   eventDate: February 2015
