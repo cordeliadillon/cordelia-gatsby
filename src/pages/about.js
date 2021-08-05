@@ -17,9 +17,9 @@ const About = () => (
       houseplants happy. My pronouns are she, her, and hers.
     </p>
     <Grid>
-      <Column>
+    <Column>
         <img
-          className="w-100"
+          className="w-100 rounded"
           src={cartoonist}
           alt="Illustration: Cordelia scribbling away at her desk"
         />
@@ -39,7 +39,7 @@ const About = () => (
       </Column>
       <Column>
         <img
-          className="w-100"
+          className="w-100 rounded"
           src={techie}
           alt="Illustration: Cordelia with hands draped across computer keyboard"
         />
@@ -64,7 +64,7 @@ const About = () => (
         You can email me at <strong>cordelia</strong> at{' '}
         <strong>cordeliadillon</strong> dot <strong>com</strong>{' '}
         or find me on one of the social media sites linked below.{' '}
-        I would love to hear from you!
+        I'd love to hear from you!
       </p>
       <p>
         <strong>Pandemic-times note:</strong>{' '}

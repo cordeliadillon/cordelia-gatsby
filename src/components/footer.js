@@ -1,4 +1,5 @@
 import React from "react";
+// import ThemeToggle from "./theme-toggle.js";
 import twitterLogo from '../images/social/twitter.png';
 import instagramLogo from '../images/social/instagram.png';
 import linkedinLogo from '../images/social/linkedin.png';
@@ -51,10 +52,15 @@ const Footer = () => (
             title={social.description}
             rel="noreferrer"
           >
-            <img src={social.logo} alt={social.label}/>
+            <img
+              className="illustration"
+              src={social.logo}
+              alt={social.label}
+            />
           </a>
         )})}
       </div>
+      {/*<ThemeToggle/>*/}
       <div className="tc pa4">
         &copy; Cordelia McGee-Tubb {new Date().getFullYear()}
       </div>

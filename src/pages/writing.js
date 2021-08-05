@@ -43,10 +43,15 @@ const Writing = () => (
       </Column>
       <Column>
         <figure className="ma0 pa0">
-          <img src={press} className="w-100" alt={`
-            Illustration of little Cordelia typing on an iMac G3
-            while wearing a school uniform and a fedora with a 'Press'
-            badge tucked in its ribbon`}/>
+          <img
+            src={press}
+            className="w-100 rounded illustration"
+            alt={`
+              Illustration of little Cordelia typing on an iMac G3
+              while wearing a school uniform and a fedora with a 'Press'
+              badge tucked in its ribbon`
+            }
+          />
           <figcaption className="f6 i tc pv2">
             Blissfully typing away on deadline
             for my fourth grade newspaper

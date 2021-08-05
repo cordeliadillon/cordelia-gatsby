@@ -21,7 +21,7 @@ const Talk = ({talk}) => (
     <p className="mv0">{talk.blurb}</p>
     { talk.links ?
       (talk.links.map((link, i) => (
-        <>
+        <span key={i}>
           {i > 0 ?
             <span aria-hidden="true" className="b ph2">
               &middot;
@@ -34,7 +34,7 @@ const Talk = ({talk}) => (
             aria-describedby={talk.id}>
             {link.name}
           </a>
-        </>
+        </span>
       ))) : null
     }
     <div>Tags: {talk.tags.join(', ')}</div>
@@ -101,9 +101,8 @@ const Talks = ({data}) => {
       </h1>
       <Grid columns="3fr 2fr">
         <Column>
-
           <p>
-            As an introvert who has struggled with social anxiety
+            As an introvert who has grappled with social anxiety
             since a young age, I never would have thought I'd enjoy
             public speaking as much as I do. But when I'm passionate
             about something, I <em>need</em> to share it. I'm passionate
@@ -121,6 +120,7 @@ const Talks = ({data}) => {
         </Column>
         <Column>
           <img
+            className="rounded illustration"
             src={publicSpeaking} 
             alt={`Illustrated Cordelia pointing enthusiastically 
               at the words 'Public Speaking' on a stand-up 

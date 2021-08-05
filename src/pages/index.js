@@ -9,7 +9,7 @@ const IndexPage = () => (
     <h1 className="visually-hidden">Cordelia McGee-Tubb</h1>
     <div className="tc">
       <img 
-        className="tc w-80-ns w-100 pv3"
+        className="tc w-80-ns w-100 mv3 rounded"
         src={sanskrit}
         alt={`
           Illustration: A guy (wearing a 'sudo' shirt) asks, 

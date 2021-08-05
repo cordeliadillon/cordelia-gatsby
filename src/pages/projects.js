@@ -179,12 +179,12 @@ const Projects = ({data}) => {
         }
 
         .project-filters li:focus-within {
-          border-bottom: 5px solid black;
+          border-bottom: 5px solid var(--text);
         }
 
         .project-filters button {
-          background-color: white;
-          color: black;
+          background-color: transparent;
+          color: var(--text);
           cursor: pointer;
         }
 
@@ -193,8 +193,8 @@ const Projects = ({data}) => {
         }
 
         .project-filters button[aria-pressed="true"] {
-          background-color: black;
-          color: white;
+          background-color: var(--text);
+          color: var(--background);
         }
 
         @media (max-width: 850px) {
