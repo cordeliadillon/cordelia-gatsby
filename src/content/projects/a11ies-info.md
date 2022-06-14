@@ -3,7 +3,7 @@ title: "a11ies.info"
 link: "https://a11ies.info/"
 image: "images/a11ies-info.png"
 featured: true
-status: "Active"
+status: "Dormant"
 date: "2021"
 tags:
   - Accessibility
