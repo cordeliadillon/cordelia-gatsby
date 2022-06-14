@@ -47,7 +47,7 @@ const About = () => (
         <p>
           I'm passionate about making technology a
           great experience for <em>everyone</em> and currently work as
-          a Principal Accessibility Engineer at Salesforce. I also {' '}
+          a Staff Design Technologist at <a href="https://www.color.com">Color</a>. I also {' '}
           <a href="http://www.ctnbayarea.org">volunteer helping older adults</a>{' '}
           improve their computer skills, which recently inspired me to
           complete an <a href="https://gero.usc.edu/what-is-gerontology/">MA 
