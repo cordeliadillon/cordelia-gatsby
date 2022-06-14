@@ -1,6 +1,15 @@
 ---
 upcomingTalks: []
 pastTalks:
+- id: '050622'
+  title: 'Panel: Comics Accessibility'
+  eventDate: May 6th, 2022
+  eventName: Electric Squeak Issue 2 Launch Party
+  eventHref: https://electricsqueak.com/
+  tags:
+  - Accessibility
+  - Comics
+  - Panel
 - id: '042920'
   title: 'Panel: Journeys into Digital Accessibility'
   eventDate: April 29th, 2020
