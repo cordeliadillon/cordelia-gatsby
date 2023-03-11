@@ -68,4 +68,6 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-*resume
+# Resume
+src/content/resume.yaml
+src/pages/resume.js
