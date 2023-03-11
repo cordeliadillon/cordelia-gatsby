@@ -107,14 +107,15 @@ const Talks = ({data}) => {
             public speaking as much as I do. But when I'm passionate
             about something, I <em>need</em> to share it. I'm passionate
             about accessibility, inclusive design, digital literacy, 
-            and technology for older adults, and I don't think these
+            and technology that adapts as we age, and I don't think these
             topics are talked about enough in mainstream tech spheres.
             By speaking with larger audiences, I hope other people
             will become passionate about them, too.
           </p>
           <Section header="Upcoming">
             <p>
-              Nothing on the agenda!
+              Nothing I can announce yet, but stay tuned. If you'd like
+              me to speak at your company or conference, let's chat!
             </p>
           </Section>
         </Column>

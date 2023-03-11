@@ -31,8 +31,8 @@ const About = () => (
           </a>{' '} from California College of the Arts.
           These days, I mostly draw autobio webcomics
           and have dreams of someday publishing a longer comic memoir
-          about anxiety, OCD, and depression. I also love to illustrate slides 
-          for my <Link to="/talks">public speaking engagements</Link>.  
+          about anxiety, obsessive-compulsive disorder, and depression. 
+          I also love to illustrate slides for my <Link to="/talks">public speaking engagements</Link>.
           I'm super excited about comics for readers with print disabilities.
           If you're excited about that, too, let's talk!
         </p>
@@ -45,15 +45,13 @@ const About = () => (
         />
         <h2 className="f3">I'm a tech person.</h2>
         <p>
-          I'm passionate about making technology a
-          great experience for <em>everyone</em> and currently work as
-          a Staff Design Technologist at <a href="https://www.color.com">Color</a>. I also {' '}
-          <a href="http://www.ctnbayarea.org">volunteer helping older adults</a>{' '}
-          improve their computer skills, which recently inspired me to
-          complete an <a href="https://gero.usc.edu/what-is-gerontology/">MA 
-          in Gerontology</a> at USC. My professional 
-          interests include web accessibility, inclusive design,
-          and gerontechnology.
+          I'm passionate about making technology accessible for <em>everyone</em>. I currently
+          focus on building inclusive digital experiences as a Staff Design Technologist at{' '}
+          <a href="https://www.color.com">Color Health</a>. I'm also a{' '}
+          <a href="http://www.ctnbayarea.org">technology tutor for older adults</a>,{' '}
+          which inspired me to complete an <a href="https://gero.usc.edu/what-is-gerontology/">MA 
+          in Gerontology</a> at USC. My professional interests include web accessibility, inclusive design,
+          digital equity, and gerontechnology.
         </p>
       </Column>
     </Grid>
@@ -71,8 +69,8 @@ const About = () => (
         I'll be honest, I'm pretty overwhelmed these days.
         I may be a bit slow to respond, so if  you haven't heard back
         from me in a while, please do reach out again.
-        It's nothing personal, just 2021.{' '}
-        <span role="img" aria-label="grimace emoji">😬</span>
+        It's nothing personal, it's just <del>2021</del> <del>2022</del> 2023.
+        {' '}<span role="img" aria-label="grimace emoji">😬</span>
       </p>
     </section>
   </Layout>
