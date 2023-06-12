@@ -1,4 +1,6 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
+import _JSXStyle from 'styled-jsx/style';
 import ThemeToggle from "./theme-toggle.js";
 import twitterLogo from '../images/social/twitter.png';
 import instagramLogo from '../images/social/instagram.png';

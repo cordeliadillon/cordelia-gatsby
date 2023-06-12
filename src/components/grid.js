@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
 import _JSXStyle from 'styled-jsx/style';
 
 export const Grid = ({children, columns, flipFlop}) => {

@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
+// eslint-disable-next-line no-unused-vars
 import _JSXStyle from 'styled-jsx/style';
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
 import sun from '../images/sun.png';

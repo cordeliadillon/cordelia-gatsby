@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+// eslint-disable-next-line no-unused-vars
 import _JSXStyle from 'styled-jsx/style';
 
 let tags = [
@@ -115,7 +116,7 @@ const Projects = ({data}) => {
         <ul className="dib project-filters f7">
           <li className="dib pv1 ml2">
             <button 
-              className="br2 bn pa2"
+              className="br-pill"
               aria-pressed={showAll} 
               aria-disabled={showAll}
               onClick={clearFilters}
@@ -123,17 +124,20 @@ const Projects = ({data}) => {
               All Projects
             </button>
           </li>
-          { tags.map((tag, i) => (
+          { tags.map((tag, i) => {
+            const isSelected = filters.includes(tag);
+            return (
               <li className="dib pv1 ml2" key={i}>
                 <button
-                  className="br2 bn pa2"
-                  aria-pressed={filters.includes(tag)}
+                  className="br-pill ph2"
+                  aria-pressed={isSelected}
                   onClick={() => toggleFilter(tag)}
                 >
+
                   {tag}
                 </button>
               </li>
-          ))}
+          )})}
         </ul>
       </div>
       <div className="project-container">
@@ -184,8 +188,10 @@ const Projects = ({data}) => {
 
         .project-filters button {
           background-color: transparent;
+          font-family: var(--font-display);
           color: var(--text);
           cursor: pointer;
+          border: 2px solid transparent;
         }
 
         .project-filters button:focus {
@@ -194,6 +200,7 @@ const Projects = ({data}) => {
 
         .project-filters button[aria-pressed="true"] {
           background-color: var(--text);
+          border-color: 2px solid var(--text);
           color: var(--background);
         }
 
