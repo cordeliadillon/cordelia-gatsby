@@ -28,7 +28,7 @@ const Piece = ({piece}) => (
 const Writing = () => (
   <Layout>
     <SEO title="Writing" />
-    <h1 className="ma0 pa0 f1">
+    <h1 className="ma0 pa0 f2">
       Writing
     </h1>
     <Grid columns="3fr 2fr">

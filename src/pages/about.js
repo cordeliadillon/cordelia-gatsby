@@ -9,7 +9,7 @@ import techie from "../images/cordelia--techie.jpg";
 const About = () => (
   <Layout>
     <SEO title="About" />
-    <h1 className="ma0 pa0 f1">About</h1>
+    <h1 className="ma0 pa0 f2">About</h1>
     <p className="mb4">
       Hey there! I'm Cordelia McGee-Tubb (though my online handle is
       cordeliadillon in most places). I enjoy circumambulating cities,
@@ -46,12 +46,12 @@ const About = () => (
         <h2 className="f3">I'm a tech person.</h2>
         <p>
           I'm passionate about making technology accessible for <em>everyone</em>. I currently
-          focus on building inclusive digital experiences as a Staff Design Technologist at{' '}
-          <a href="https://www.color.com">Color Health</a>. I'm also a{' '}
+          focus on building inclusive digital experiences at{' '}
+          <a href="https://www.color.com">Color Health</a>'s Staff Design Technologist. I'm also a{' '}
           <a href="http://www.ctnbayarea.org">technology tutor for older adults</a>,{' '}
           which inspired me to complete an <a href="https://gero.usc.edu/what-is-gerontology/">MA 
           in Gerontology</a> at USC. My professional interests include web accessibility, inclusive design,
-          digital equity, and gerontechnology.
+          digital and medical equity, and gerontechnology.
         </p>
       </Column>
     </Grid>

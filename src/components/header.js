@@ -16,7 +16,7 @@ const Header = () => (
     <div className="mw8 center tl tc-ns">
       <Link to="/">
         <img 
-          className="w-100 w-80-ns tracked b mt4 mb2 tc invert"
+          className="w-100 w-90-l tracked b mt4 mb2 tc invert"
           src={name}
           alt="Cordelia McGee-Tubb"
         />

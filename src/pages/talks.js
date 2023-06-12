@@ -96,21 +96,20 @@ const Talks = ({data}) => {
   return (
     <Layout>
       <SEO title="Talks" />
-      <h1 className="ma0 pa0 f1">
+      <h1 className="ma0 pa0 f2">
         Talks
       </h1>
       <Grid columns="3fr 2fr">
         <Column>
           <p>
-            As an introvert who has grappled with social anxiety
-            since a young age, I never would have thought I'd enjoy
+            As an anxious introvert, I never would have thought I'd enjoy
             public speaking as much as I do. But when I'm passionate
             about something, I <em>need</em> to share it. I'm passionate
             about accessibility, inclusive design, digital literacy, 
             and technology that adapts as we age, and I don't think these
-            topics are talked about enough in mainstream tech spheres.
+            are discussed enough in tech spheres.
             By speaking with larger audiences, I hope other people
-            will become passionate about them, too.
+            will become passionate about these topics, too.
           </p>
           <Section header="Upcoming">
             <p>

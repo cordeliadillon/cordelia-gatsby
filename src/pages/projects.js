@@ -110,7 +110,7 @@ const Projects = ({data}) => {
     <Layout>
       <SEO title="Projects" />
 
-      <h1 className="ma0 pa0 f1">Projects</h1>
+      <h1 className="ma0 pa0 f2">Projects</h1>
       <div className="project-header">
         <span className="dib mr2">Filter:</span>
         <ul className="dib project-filters f7">
