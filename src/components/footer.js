@@ -46,7 +46,7 @@ const Footer = () => (
       <div className="social-media">
         {socials.map((social, i) => { return (
           <a key={i} 
-            className="dib p0 mr2"
+            className={`dib p0 ${i !== (socials.length - 1) && 'mr2'}`}
             href={social.url}
             target="_blank"
             title={social.description}
@@ -69,6 +69,13 @@ const Footer = () => (
         <ThemeToggle/>
       </div>
     </footer>
+    <style jsx>
+    {`
+      footer {
+        row-gap: 1em;
+      }
+    `}
+    </style>
   </>
 )
 
