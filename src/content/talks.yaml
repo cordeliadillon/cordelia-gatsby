@@ -1,6 +1,15 @@
 ---
 upcomingTalks: []
 pastTalks:
+- id: '050323'
+  title: 'Designing Flexible, Accessible UIs'
+  eventDate: May 5th, 2023
+  eventName: 'Microsoft Accessibility Innovation: Digital Inclusion of Older Adults Workshop'
+  tags:
+  - Accessibility
+  - Panel
+  - Senior Citizens
+  - User Experience
 - id: '050622'
   title: 'Panel: Comics Accessibility'
   eventDate: May 6th, 2022
