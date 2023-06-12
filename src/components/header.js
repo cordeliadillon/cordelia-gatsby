@@ -13,17 +13,17 @@ const navLinks = [
 
 const Header = () => (
   <header>
-    <div className="mw8 center tc">
+    <div className="mw8 center tl tc-ns">
       <Link to="/">
         <img 
-          className="w-80 tracked b mt4 mb2 tc"
+          className="w-100 w-80-ns tracked b mt4 mb2 tc invert"
           src={name}
           alt="Cordelia McGee-Tubb"
         />
       </Link>
     </div>
 
-    <nav className="tc pb3">
+    <nav className="tl tc-ns pb3">
       <ul className="list b f3 ma0 pa0 tracked ttu">
         {navLinks.map((navLink, i) => { return (
           <li className="dib-ns mr4-ns mb2" key={i}>
