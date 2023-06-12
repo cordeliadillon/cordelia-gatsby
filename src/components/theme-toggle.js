@@ -14,8 +14,8 @@ const ThemeToggle = () => {
   return (
     <ThemeToggler>
       {({ theme, toggleTheme }) => (
-        <div role="group" className="flex pa2 br-pill" aria-label="Color Theme">
-          <img src={sun} className="invert ph1" alt=''/>
+        <div role="group" className="flex pa2 br-pill" aria-labelledby="colorThemeLabel">
+          <img src={sun} className="invert ph1" alt="Color Theme" id="colorThemeLabel"/>
           { options.map((option, i) => {
               return (
                 <button
