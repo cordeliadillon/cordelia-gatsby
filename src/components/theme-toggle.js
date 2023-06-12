@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import _JSXStyle from 'styled-jsx/style';
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
+import sun from '../images/sun.png';
 
 const options = [
   {label: 'Auto', value: 'auto'},
@@ -9,66 +10,51 @@ const options = [
 ];
 
 const ThemeToggle = () => {
-  const [selection, setSelection] = useState(0);
-  const [focusIndex, setFocusIndex] = useState(0);
-
-  const handleKeyDown = (event, index) => {
-    switch (event.key) {
-      case 'ArrowLeft':
-      case 'ArrowUp':
-        if (index > 0) setFocusIndex(index-1);
-        break;
-      case 'ArrowRight':
-      case 'ArrowDown':
-        if (index < options.length - 1) setFocusIndex(index+1);
-        break;
-      default:
-        break;
-    }
-  }
-
-  useEffect(() => {
-    document.getElementById(`mode${focusIndex}`).focus();
-  }, [focusIndex]);
-
   return (
     <ThemeToggler>
       {({ theme, toggleTheme }) => (
-        <div role="toolbar" className="pa1" aria-label="Color Theme">
+        <div role="group" className="flex pa2 br-pill" aria-label="Color Theme">
+          <img src={sun} className="invert ph1" alt=''/>
           { options.map((option, i) => {
               return (
                 <button
                   key={i}
-                  role="radio"
-                  id={`mode${i}`}
-                  aria-checked={theme === option.value}
+                  aria-pressed={theme === option.value}
                   onClick={e => toggleTheme(option.value)}
-                  onKeyDown={e => handleKeyDown(e, i)}
-                  tabIndex={focusIndex === i ? '0' : '-1'}
+                  className="br-pill"
                 >
                   {option.label}
                 </button>
               );
           })}
           <style jsx>{`
-              button {
-                color: var(--text);
-                background-color: var(--background);
+              *[role="group"] {
+                gap: .5em;
               }
 
-              button[aria-checked="true"] {
+              img {
+                width: 1.5em;
+                heigh: auto;
+              }
+
+              button {
+                font-size: .85rem;
+                color: var(--text);
+                background-color: var(--background);
+                border: 2px solid var(--text);
+                font-family: var(--font-display);
+                opacity: 1;
+              }
+
+              button:focus {
+                outline: none;
+                box-shadow: 0px 0px 0px 4px var(--link);
+              }
+
+              button[aria-pressed="true"] {
                 color: var(--background);
                 background-color: var(--text);
               }
-
-              *[role="toolbar"] {
-                position: fixed;
-                bottom: 10px;
-                right: 10px;
-                border-radius: var(--rounded);
-                background-color: var(--text);
-              }
-
             `}
           </style>
         </div>

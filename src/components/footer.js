@@ -1,5 +1,5 @@
 import React from "react";
-// import ThemeToggle from "./theme-toggle.js";
+import ThemeToggle from "./theme-toggle.js";
 import twitterLogo from '../images/social/twitter.png';
 import instagramLogo from '../images/social/instagram.png';
 import linkedinLogo from '../images/social/linkedin.png';
@@ -42,8 +42,8 @@ const socials = [
 
 const Footer = () => (
   <>
-    <footer>
-      <div className="pt5 tc social-media">
+    <footer className="flex flex-row-l flex-column justify-between-l justify-center items-center mt5 mb4">
+      <div className="social-media">
         {socials.map((social, i) => { return (
           <a key={i} 
             className="dib p0 mr2"
@@ -53,16 +53,20 @@ const Footer = () => (
             rel="noreferrer"
           >
             <img
-              className="illustration"
+              className="illustration invert"
               src={social.logo}
               alt={social.label}
             />
           </a>
         )})}
       </div>
-      {/*<ThemeToggle/>*/}
-      <div className="tc pa4">
+
+      <div>
         &copy; Cordelia McGee-Tubb {new Date().getFullYear()}
+      </div>
+
+      <div>
+        <ThemeToggle/>
       </div>
     </footer>
   </>

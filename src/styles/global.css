@@ -3,39 +3,44 @@
 
 body {
   --background: #fff;
+  --background-dark: #211C1C;
   --text: #000;
+  --text-dark: #f8eeee;
   --link: #e00000;
+  --link-dark: #7C75FF;
   --duration: .75s;
   --rounded: 10px;
   --ttf: cubic-bezier(0.4, 0, 0.2, 1);
+  --font-regular: 'Hind Guntur', Helvetica, sans-serif;
+  --font-display: 'Montserrat', Helvetica, sans-serif;
 
-  font-family: 'Hind Guntur', Helvetica, sans-serif;
   position: relative;
   padding: 0 1rem;
   background-color: var(--background);
   color: var(--text);
+  font-family: var(--font-regular);
 
-  transition-property: background-color, border-color, color, fill, opacity;
+  transition-property: background-color, border-color, color, fill, filter, opacity;
   transition-timing-function: var(--ttf);
   transition-duration: var(--duration);
 }
 
-/*body.dark {
-  --background: #272121;
-  --text: #f8eeee;
-  --link: #7C75FF;
+body.dark {
+  --background: var(--background-dark);
+  --text: var(--text-dark);
+  --link: var(--link-dark);
 }
 
 @media (prefers-color-scheme: dark) {
   body.auto {
-    --background: #272121;
-    --text: #f8eeee;
-    --link: #7C75FF;
+    --background: var(--background-dark);
+    --text: var(--text-dark);
+    --link: var(--link-dark);
   }
-}*/
+}
 
 nav, h1, h2, h3, h4 {
-  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-family: var(--font-display);
 }
 
 header,
@@ -68,7 +73,7 @@ a.button:hover, a.button:focus {
 }
 
 .social-media img {
-  width: 60px;
+  width: 40px;
   height: auto;
 }
 
@@ -114,7 +119,7 @@ main {
 }
 
 .selected a {
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid var(--text);
 }
 
 .rounded img, img.rounded {
@@ -133,8 +138,9 @@ main {
   border: 0px;
 }
 
+/* DARK MODE */
 
-/*body.dark img,
+body.dark img,
 body.dark .gatsby-image-wrapper {
   opacity: .8;
 }
@@ -144,17 +150,16 @@ body.dark .gatsby-image-wrapper:hover {
   opacity: .9;
 }
 
-body.dark header img {
+body.dark img.invert {
   opacity: 1;
   filter: invert(1);
-
   transition-property: filter;
   transition-timing-function: var(--ttf);
   transition-duration: var(--duration);
 }
 
-body.dark .social-media img {
-  filter: invert(1);
+body.dark img.invert:hover {
+  opacity: 1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -173,7 +178,15 @@ body.dark .social-media img {
     filter: invert(1);
   }
 
-  body.auto .social-media img {
+  body.auto img.invert {
+    opacity: 1;
     filter: invert(1);
+    transition-property: filter;
+    transition-timing-function: var(--ttf);
+    transition-duration: var(--duration);
   }
-}*/
+  
+  body.auto img.invert:hover {
+    opacity: 1;
+  }
+}
