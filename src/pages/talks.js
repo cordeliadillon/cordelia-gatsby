@@ -8,7 +8,7 @@ import SEO from "../components/seo";
 import publicSpeaking from "../images/cordelia--public-speaking.jpg";
 import allTalkData from "../content/talks.yaml";
 
-const Talk = ({talk}) => (
+const Talk = ({talk, showTags, showLocation}) => (
   <div>
     <h3 className="mb0 f4" id={talk.id}>{talk.title}</h3>
     <p className="mv0 f4">
@@ -17,6 +17,7 @@ const Talk = ({talk}) => (
         (<a href={talk.eventHref}>{talk.eventName}</a>):
         (<span>{talk.eventName}</span>)
       }
+      {(showLocation && talk.location) && ` (${talk.location})`}
     </p>
     <p className="mv0">{talk.blurb}</p>
     { talk.links ?
@@ -37,8 +38,18 @@ const Talk = ({talk}) => (
         </span>
       ))) : null
     }
-    <div>Tags: {talk.tags.join(', ')}</div>
+    {(showTags && talk.tags) && (<div>Tags: {talk.tags.join(', ')}</div>)}
   </div>
+);
+
+const TalkList = ({talks}) => (
+  <ul className="list pa0 ma0 cf">
+    {talks.map((talk, i) => (
+      <li key={i}>
+        <Talk talk={talk} />
+      </li>
+      ))}
+  </ul>
 );
 
 const FeaturedPhoto = ({data}) => {
@@ -112,10 +123,13 @@ const Talks = ({data}) => {
             will become passionate about these topics, too.
           </p>
           <Section header="Upcoming">
-            <p>
-              Nothing I can announce yet, but stay tuned. If you'd like
-              me to speak at your company or conference, let's chat!
-            </p>
+            {allTalkData.upcomingTalks.length === 0 && 
+              <p>
+                Nothing on the agenda!
+              </p>
+            }
+            <p>If you'd like me to speak at your company or conference, let's chat!</p>
+            {allTalkData.upcomingTalks.length > 0 && <TalkList talks={allTalkData.upcomingTalks}/>}
           </Section>
         </Column>
         <Column>
@@ -135,13 +149,7 @@ const Talks = ({data}) => {
       </Section>
 
       <Section header="Past Talks">
-        <ul className="list pa0 ma0 cf">
-          {allTalkData.pastTalks.map((talk, i) => (
-            <li key={i}>
-              <Talk talk={talk} />
-            </li>
-           ))}
-        </ul>
+        <TalkList talks={allTalkData.pastTalks}/>
       </Section>
     </Layout>
   );

@@ -45,13 +45,13 @@ const About = () => (
         />
         <h2 className="f3">I'm a tech person.</h2>
         <p>
-          I'm passionate about making technology accessible for <em>everyone</em>. I currently
-          focus on building inclusive digital experiences at{' '}
-          <a href="https://www.color.com">Color Health</a>'s Staff Design Technologist. I'm also a{' '}
+          I'm passionate about making technology accessible for <em>everyone</em> and currently
+          work as a design technologist at <a href="https://www.ebay.com">eBay</a>. 
+          For the past decade, I've been volunteering as a{' '}
           <a href="http://www.ctnbayarea.org">technology tutor for older adults</a>,{' '}
           which inspired me to complete an <a href="https://gero.usc.edu/what-is-gerontology/">MA 
           in Gerontology</a> at USC. My professional interests include web accessibility, inclusive design,
-          digital and medical equity, and gerontechnology.
+          front-end development, digital equity, and gerontechnology.
         </p>
       </Column>
     </Grid>

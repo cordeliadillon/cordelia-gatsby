@@ -1,10 +1,35 @@
 ---
 upcomingTalks: []
 pastTalks:
+- id: '071123'
+  title: 'Designing for Accessibility: An Interactive Workshop on Creating Digital and Physical Experiences that Meet People Where They Are'
+  eventDate: July 11th, 2023
+  eventName: NACCHO 360
+  eventHref: https://www.naccho360.org/
+  location: Denver, CO
+  links:
+  - name: Abstract
+    href: https://naccho2023.mapyourshow.com/8_0/sessions/session-details.cfm?scheduleid=710
+- id: '062723'
+  title: AXSChat
+  eventDate: June 27, 2023
+  eventName: AXSChat
+  eventHref: https://www.axschat.com/cordelia-mcgee-tubb/
+  location: Virtual
+  tags:
+  - Accessibility
+  - Senior Citizens
+  - Interview
+  links:
+  - name: "#AXSChat Twitter Discussion"
+    href: https://twitter.com/search?q=(%23AXSChat)%20until%3A2023-06-28%20since%3A2023-06-27
+  - name: Interview
+    href: https://www.axschat.com/cordelia-mcgee-tubb-2/
 - id: '050323'
   title: 'Designing Flexible, Accessible UIs'
   eventDate: May 5th, 2023
   eventName: 'Microsoft Accessibility Innovation: Digital Inclusion of Older Adults Workshop'
+  location: Virtual
   tags:
   - Accessibility
   - Panel
@@ -15,6 +40,7 @@ pastTalks:
   eventDate: May 6th, 2022
   eventName: Electric Squeak Issue 2 Launch Party
   eventHref: https://electricsqueak.com/
+  location: Virtual
   tags:
   - Accessibility
   - Comics
@@ -24,6 +50,7 @@ pastTalks:
   eventDate: April 29th, 2020
   eventName: Bay Area Accessibility and Inclusive Design Meetup
   eventHref: https://www.meetup.com/a11ybay/events/270204474/
+  location: Virtual
   tags:
   - Accessibility
   - Career
@@ -33,6 +60,7 @@ pastTalks:
   eventDate: April 28th, 2020
   eventName: AXSChat
   eventHref: https://www.axschat.com/cordelia-mcgee-tubb/
+  location: Virtual
   tags:
   - Accessibility
   - Interview
@@ -54,10 +82,11 @@ pastTalks:
   - name: Abstract
     href: https://success.salesforce.com/sessions?eventId=a1Q3A000021ea1UUAQ#/session/a2q3A000002BJNgQAO
 - id: '102419'
-  title: Co-hosting with Eric Bailey
+  title: "Co-hosting with Eric Bailey: A11yTO"
   eventDate: October 24-25th, 2019
   eventName: "#a11yTOConf"
   eventHref: https://conf.a11yto.com/
+  location: Toronto, Canada
   tags:
   - Accessibility
   - Hosting
@@ -66,6 +95,7 @@ pastTalks:
   eventDate: May 14th, 2019
   eventName: Benchmarking Digital Inclusion to Drive a Better Digital World
   eventHref: https://www.eventbrite.com/e/benchmarking-digital-inclusion-to-drive-a-better-digital-world-registration-58851121288#
+  location: Copenhagen, Denmark
   tags:
   - Accessibility
   - Process
@@ -104,7 +134,7 @@ pastTalks:
   eventDate: March 2nd, 2019
   eventName: Women Techmakers 2019
   eventHref: https://www.womentechmakers.com/iwd19/google-mountain-view-19
-  location: Mountain View
+  location: Mountain View, CA
   tags:
   - Accessibility
   - Career
@@ -117,7 +147,7 @@ pastTalks:
   eventDate: February 23rd, 2019
   eventName: World IA Day 2019
   eventHref: https://generalassemb.ly/education/world-ia-day-2019-design-for-difference/san-francisco/69704
-  location: San Francisco
+  location: San Francisco, CA
   tags:
   - Universal Design
   - User Experience
@@ -127,7 +157,7 @@ pastTalks:
   eventDate: October 2018
   eventName: "#a11yTOConf"
   eventHref: http://conf.a11yto.com/talks#everything-i-learned-about-interaction-design
-  location: Toronto
+  location: Toronto, Canada
   tags:
   - Universal Design
   - User Experience
@@ -136,19 +166,16 @@ pastTalks:
   eventDate: September 2018
   eventName: World Interaction Design Day
   eventHref: https://www.eventbrite.com/e/inclusive-design-in-practice-tickets-48506684800
-  location: San Francisco
+  location: San Francisco, CA
   tags:
   - Inclusive Design
   - Universal Design
-  links:
-  - name: Event
-    href: https://www.eventbrite.com/e/inclusive-design-in-practice-tickets-48506684800
 - id: '032318'
   title: Major Patterns for Accessible Drag & Drop
   eventDate: March 2018
   eventName: CSUN
   eventHref: http://www.csun.edu/cod/conference/2018/sessions/index.php/
-  location: San Diego
+  location: San Diego, CA
   tags:
   - Accessibility
   - Universal Design
@@ -162,7 +189,7 @@ pastTalks:
   eventDate: October 2017
   eventName: Accessibility Camp Bay Area
   eventHref: http://www.accessibilitycampbay.org/2017talks.php
-  location: San Francisco
+  location: San Francisco, CA
   tags:
   - Panel Moderator
   - Accessibility
@@ -182,7 +209,7 @@ pastTalks:
   eventDate: September 2017
   eventName: A11y Camp Sydney
   eventHref: https://www.eventbrite.com.au/e/a11y-camp-2017-workshops-tickets-36529511753
-  location: Sydney
+  location: Sydney, Australia
   tags:
   - Accessibility
   - Universal Design
@@ -192,7 +219,7 @@ pastTalks:
   eventDate: September 2017
   eventName: A11y Camp Sydney
   eventHref: http://a11ybytes.org/a11y-camp-schedule/
-  location: Sydney
+  location: Sydney, Australia
   tags:
   - Accessibility
   - Web Development
@@ -202,6 +229,7 @@ pastTalks:
   eventDate: June 2017
   eventName: Inclusive Design 24 (#ID24)
   eventHref: http://www.inclusivedesign24.org/
+  location: Virtual
   tags:
   - Accessibility
   - Comics
@@ -230,7 +258,7 @@ pastTalks:
   eventDate: May 2017
   eventName: Respond 17
   eventHref: http://www.webdirections.org/respond/schedule.html
-  location: Sydney & Melbourne
+  location: Sydney & Melbourne, Australia
   tags:
   - Accessibility
   - Web Development
@@ -250,7 +278,7 @@ pastTalks:
   eventDate: April 2017
   eventName: Funka Accessibility Days
   eventHref: http://www.funka.com/en/we-offer/funka-accessibility-days/program/
-  location: Stockholm
+  location: Stockholm, Sweden
   tags:
   - Accessibility
   - Universal Design
@@ -266,6 +294,7 @@ pastTalks:
   eventDate: November 2016
   eventName: Storytelling Across Media
   eventHref: http://www.comic-con.org/frontpage/sam-program-schedule
+  location: San Francisco, CA
   tags:
   - Comics
   - Storytelling
@@ -300,6 +329,7 @@ pastTalks:
   eventDate: April 2016
   eventName: Clarity
   eventHref: http://clarityconf.com/
+  location: San Francisco, CA
   tags:
   - Accessibility
   - Design Systems
@@ -332,6 +362,7 @@ pastTalks:
   eventDate: March 2015
   eventName: CSUN
   eventHref: http://www.csun.edu/cod/conference/
+  location: San Diego, CA
   tags:
   - Accessibility
   - Process
